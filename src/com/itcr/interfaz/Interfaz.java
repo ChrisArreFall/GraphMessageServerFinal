@@ -145,6 +145,7 @@ public class Interfaz {
 		Usuarios.clear();
 		for(int i = 0; i < Main.listaBlanca.size(); i++)
 		{
+			System.out.println(Main.listaBlanca.get(i).getNombre());
 			Usuarios.addElement(Main.listaBlanca.get(i).getNombre()+ "                                   ");
 		}
 	}

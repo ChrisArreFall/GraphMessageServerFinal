@@ -1,5 +1,6 @@
 package com.itcr.estructurasDeDatos;
 
+import java.io.Serializable;
 import java.util.HashMap;
 import java.util.Map;
 
@@ -8,7 +9,7 @@ import com.itcr.main.Main;
 import com.itcr.usuario.ID;
 
 
-public class Grafo<T> {
+public class Grafo<T> implements Serializable{
 
     private final Map<T, NodoGrafo<T>> listaAdyacencia;
 
@@ -147,6 +148,7 @@ public class Grafo<T> {
     		peso.calculadorPeso(nodoNuevo.getX(), nodoNuevo.getY(), Main.listaBlanca.get(i).getX(), Main.listaBlanca.get(i).getY());
     		System.out.println(nodoNuevo.getIP() + " a ");
     		Main.grafoGeneral.agregarArista(Main.listaBlanca.get(i), nodoNuevo, peso.getPeso());
+    		
     	}
     }
 

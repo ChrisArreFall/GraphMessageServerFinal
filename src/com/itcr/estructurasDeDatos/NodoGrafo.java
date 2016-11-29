@@ -1,10 +1,11 @@
 package com.itcr.estructurasDeDatos;
 
+import java.io.Serializable;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Optional;
 
-public class NodoGrafo<T> {
+public class NodoGrafo<T>  implements Serializable{
 
     private T vertice;
 

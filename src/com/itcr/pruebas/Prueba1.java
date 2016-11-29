@@ -9,6 +9,7 @@ import com.itcr.estructurasDeDatos.Grafo;
 import com.itcr.funciones.Mensaje;
 import com.itcr.funciones.Peso;
 import com.itcr.interfaz.Prueba;
+import com.itcr.main.Main;
 import com.itcr.usuario.ID;
 import com.itcr.usuario.Contenedor;
 import com.itcr.visualizer.Graph;
@@ -27,10 +28,15 @@ public class Prueba1 {
 
 
 	public static void main(String[] args) throws FileNotFoundException, InterruptedException {
+		String puto = "puto";
+		String mierda = "mierda";
+		String picha = "picha";
+		String jueputa = "jueputa";
 
 		Prueba.main();
 		g.show();
 
+		
 		//--------------------------------------
 		ID id1 = new ID();
 		Contenedor usuario1 = new Contenedor();
@@ -313,11 +319,12 @@ public class Prueba1 {
 		usuario24.getId().setX(14);
 		usuario24.getId().setY(18);
 
+
 		//----------------------------------
 		ID id25 = new ID();
 		Contenedor usuario25 = new Contenedor();
 
-		id25.setIP("192.168.0.1");
+		id25.setIP("192.168.0.25");
 		id25.setMAC("00:00:00:00:00:25");
 		id25.setNombre("Pan");
 
@@ -329,7 +336,7 @@ public class Prueba1 {
 		ID id26 = new ID();
 		Contenedor usuario26 = new Contenedor();
 
-		id26.setIP("192.168.0.1");
+		id26.setIP("192.168.0.26");
 		id26.setMAC("00:00:00:00:00:26");
 		id26.setNombre("Piccolo");
 
@@ -341,7 +348,7 @@ public class Prueba1 {
 		ID id27 = new ID();
 		Contenedor usuario27 = new Contenedor();
 
-		id27.setIP("192.168.0.1");
+		id27.setIP("192.168.0.27");
 		id27.setMAC("00:00:00:00:00:27");
 		id27.setNombre("Gogeta");
 
@@ -353,7 +360,7 @@ public class Prueba1 {
 		ID id28 = new ID();
 		Contenedor usuario28 = new Contenedor();
 
-		id28.setIP("192.168.0.1");
+		id28.setIP("192.168.0.28");
 		id28.setMAC("00:00:00:00:00:28");
 		id28.setNombre("Veggeto");
 
@@ -365,7 +372,7 @@ public class Prueba1 {
 		ID id29 = new ID();
 		Contenedor usuario29 = new Contenedor();
 
-		id29.setIP("192.168.0.1");
+		id29.setIP("192.168.0.29");
 		id29.setMAC("00:00:00:00:00:29");
 		id29.setNombre("krilin");
 
@@ -377,7 +384,7 @@ public class Prueba1 {
 		ID id30 = new ID();
 		Contenedor usuario30 = new Contenedor();
 
-		id30.setIP("192.168.0.1");
+		id30.setIP("192.168.0.30");
 		id30.setMAC("00:00:00:00:00:30");
 		id30.setNombre("Yamcha");
 
@@ -389,7 +396,7 @@ public class Prueba1 {
 		ID id31 = new ID();
 		Contenedor usuario31 = new Contenedor();
 
-		id31.setIP("192.168.0.1");
+		id31.setIP("192.168.0.31");
 		id31.setMAC("00:00:00:00:00:31");
 		id31.setNombre("Tenchinhan");
 
@@ -401,7 +408,7 @@ public class Prueba1 {
 		ID id32 = new ID();
 		Contenedor usuario32 = new Contenedor();
 
-		id32.setIP("192.168.0.1");
+		id32.setIP("192.168.0.32");
 		id32.setMAC("00:00:00:00:00:31");
 		id32.setNombre("Roshi");
 
@@ -413,7 +420,7 @@ public class Prueba1 {
 		ID id33 = new ID();
 		Contenedor usuario33 = new Contenedor();
 
-		id33.setIP("192.168.0.1");
+		id33.setIP("192.168.0.33");
 		id33.setMAC("00:00:00:00:00:32");
 		id33.setNombre("Brolly");
 
@@ -425,7 +432,7 @@ public class Prueba1 {
 		ID id34 = new ID();
 		Contenedor usuario34 = new Contenedor();
 
-		id34.setIP("192.168.0.1");
+		id34.setIP("192.168.0.34");
 		id34.setMAC("00:00:00:00:00:3");
 		id34.setNombre("Zamazu");
 
@@ -437,7 +444,7 @@ public class Prueba1 {
 		ID id35 = new ID();
 		Contenedor usuario35 = new Contenedor();
 
-		id35.setIP("192.168.0.1");
+		id35.setIP("192.168.0.35");
 		id35.setMAC("00:00:00:00:00:34");
 		id35.setNombre("Bardock");
 
@@ -500,14 +507,14 @@ public class Prueba1 {
 		usuario1.setMensaje(mensaje1);
 
 
-		mensajes.add(mensaje1);
-		mensajes.add(mensaje2);
-		mensajes.add(mensaje3);
-		mensajes.add(mensaje3);
-		mensajes.add(mensaje4);
-		mensajes.add(mensaje5);
-		mensajes.add(mensaje6);
-		mensajes.add(mensaje7);
+		Main.mensajes.add(mensaje1);
+		Main.mensajes.add(mensaje2);
+		Main.mensajes.add(mensaje3);
+		Main.mensajes.add(mensaje3);
+		Main.mensajes.add(mensaje4);
+		Main.mensajes.add(mensaje5);
+		Main.mensajes.add(mensaje6);
+		Main.mensajes.add(mensaje7);
 
 
 
@@ -515,80 +522,95 @@ public class Prueba1 {
 
 		//--------------------------------------
 
-		listaBlanca.add(id1);
+		Main.listaBlanca.add(id1);
 		constuctorGrafoVizualizador(id1);
-		listaBlanca.add(id2);
+		Main.listaBlanca.add(id2);
 		constuctorGrafoVizualizador(id2);
-		listaBlanca.add(id3);
+		Main.listaBlanca.add(id3);
 		constuctorGrafoVizualizador(id3);
-		listaBlanca.add(id4);
+		Main.listaBlanca.add(id4);
 		constuctorGrafoVizualizador(id4);
-		/*
-		listaBlanca.add(id5);
-		iterarGrafoYConstruirlo(id5);
-		listaBlanca.add(id6);
-		iterarGrafoYConstruirlo(id6);
-		listaBlanca.add(id7);
-		iterarGrafoYConstruirlo(id7);
-		listaBlanca.add(id8);
-		iterarGrafoYConstruirlo(id8);
-		listaBlanca.add(id9);
-		iterarGrafoYConstruirlo(id9);
-		listaBlanca.add(id10);
-		iterarGrafoYConstruirlo(id10);
+		
+		Main.listaBlanca.add(id5);
+		constuctorGrafoVizualizador(id5);
+		Main.listaBlanca.add(id6);
+		constuctorGrafoVizualizador(id6);
+		Main.listaBlanca.add(id7);
+		constuctorGrafoVizualizador(id7);
+		Main.listaBlanca.add(id8);
+		constuctorGrafoVizualizador(id8);
+		Main.listaBlanca.add(id9);
+		constuctorGrafoVizualizador(id9);
+		Main.listaBlanca.add(id10);
+		constuctorGrafoVizualizador(id10);
 		/*
 		listaBlanca.add(id11);
-		iterarGrafoYConstruirlo(id11);
+		constuctorGrafoVizualizador(id11);
 		listaBlanca.add(id12);
-		iterarGrafoYConstruirlo(id12);
+		constuctorGrafoVizualizador(id12);
 		listaBlanca.add(id13);
-		iterarGrafoYConstruirlo(id13);
+		constuctorGrafoVizualizador(id13);
 		listaBlanca.add(id14);
-		iterarGrafoYConstruirlo(id14);
+		constuctorGrafoVizualizador(id14);
 		listaBlanca.add(id15);
-		iterarGrafoYConstruirlo(id15);
+		constuctorGrafoVizualizador(id15);
 		listaBlanca.add(id20);
-		iterarGrafoYConstruirlo(id20);
+		constuctorGrafoVizualizador(id20);
 		listaBlanca.add(id21);
-		iterarGrafoYConstruirlo(id21);
+		constuctorGrafoVizualizador(id21);
 		listaBlanca.add(id22);
-		iterarGrafoYConstruirlo(id22);
+		constuctorGrafoVizualizador(id22);
 		listaBlanca.add(id23);
-		iterarGrafoYConstruirlo(id23);
+		constuctorGrafoVizualizador(id23);
 		listaBlanca.add(id24);
-		iterarGrafoYConstruirlo(id24);
-		listaBlanca.add(id25);
-		iterarGrafoYConstruirlo(id25);
-		listaBlanca.add(id26);
-		iterarGrafoYConstruirlo(id26);
-		listaBlanca.add(id27);
-		iterarGrafoYConstruirlo(id27);
-		listaBlanca.add(id28);
-		iterarGrafoYConstruirlo(id28);
-		listaBlanca.add(id29);
-		iterarGrafoYConstruirlo(id29);
-		listaBlanca.add(id30);
-		iterarGrafoYConstruirlo(id30);
-		listaBlanca.add(id31);
-		iterarGrafoYConstruirlo(id31);
-		listaBlanca.add(id32);
-		iterarGrafoYConstruirlo(id32);
-		listaBlanca.add(id33);
-		iterarGrafoYConstruirlo(id33);
-		listaBlanca.add(id34);
-		iterarGrafoYConstruirlo(id34);
-		listaBlanca.add(id35);
-		iterarGrafoYConstruirlo(id35);
-
-
-
-
-
-		guardarListaBlanca(listaBlanca);
-
-
-
+		constuctorGrafoVizualizador(id24);
 		*/
+		listaBlanca.add(id25);
+		constuctorGrafoVizualizador(id25);
+		listaBlanca.add(id26);
+		constuctorGrafoVizualizador(id26);
+		listaBlanca.add(id27);
+		constuctorGrafoVizualizador(id27);
+		listaBlanca.add(id28);
+		constuctorGrafoVizualizador(id28);
+		listaBlanca.add(id29);
+		constuctorGrafoVizualizador(id29);
+		listaBlanca.add(id30);
+		constuctorGrafoVizualizador(id30);
+		listaBlanca.add(id31);
+		constuctorGrafoVizualizador(id31);
+		listaBlanca.add(id32);
+		constuctorGrafoVizualizador(id32);
+		listaBlanca.add(id33);
+		constuctorGrafoVizualizador(id33);
+		listaBlanca.add(id34);
+		constuctorGrafoVizualizador(id34);
+		listaBlanca.add(id35);
+		constuctorGrafoVizualizador(id35);
+
+		Main.listaNegra.add(id25);
+		Main.listaNegra.add(id26);
+		Main.listaNegra.add(id27);
+		Main.listaNegra.add(id28);
+		Main.listaNegra.add(id29);
+		Main.listaNegra.add(id30);
+		Main.listaNegra.add(id31);
+		Main.listaNegra.add(id32);
+		Main.listaNegra.add(id33);
+		Main.listaNegra.add(id34);
+		Main.listaNegra.add(id35);
+
+
+
+
+		Main.listaMalasPalabras.add(jueputa);
+		Main.listaMalasPalabras.add(mierda);
+		Main.listaMalasPalabras.add(picha);
+		Main.listaMalasPalabras.add(puto);
+
+
+
+		
 		//g.colorShortPath(id1, id4);
 		/*
 		Thread.sleep(10000);
@@ -598,19 +620,47 @@ public class Prueba1 {
 		id4.setY(-83.912567);
 
 		Thread.sleep(5000);
-		
-		iterarGrafoYConstruirlo(id4);
 		*/
+		//constuctorGrafoVizualizador(id4);
+		
 
 
-		Thread.sleep(10000);
-		Prueba.initUsuarios();
+		//Thread.sleep(10000);
+		//Prueba.initUsuarios();
+		guardarListaBlanca(listaBlanca);
+		
+		
+		//obtenerArchivoMensajes()
+		guardarListaBlanca(Main.listaBlanca);
+		guardarListaMalasPalabras(Main.listaMalasPalabras);
+		guardarMensajes(Main.mensajes);
+		guardarListaNegra(Main.listaNegra);
+		
 	}
 
+	public static void guardarListaMalasPalabras(LinkedList<String> listaMalasPalabras) throws FileNotFoundException{
+		XMLEncoder xmlEncoder = new XMLEncoder(new FileOutputStream("/Users/chrisarrefall/Documents/listaMalasPalabras.xml"));
+		xmlEncoder.writeObject(Main.listaMalasPalabras);
+		xmlEncoder.close();
+		
+	}
+	
+	public static void guardarMensajes(LinkedList<Mensaje> mensajes) throws FileNotFoundException{
+		XMLEncoder xmlEncoder = new XMLEncoder(new FileOutputStream("/Users/chrisarrefall/Documents/listMensajes.xml"));
+		xmlEncoder.writeObject(Main.mensajes);
+		xmlEncoder.close();
+	}
 
 	public static void guardarListaBlanca(LinkedList<ID> listaBlanca) throws FileNotFoundException{
+		XMLEncoder xmlEncoder = new XMLEncoder(new FileOutputStream("/Users/chrisarrefall/Documents/listaBlanca.xml"));
+		xmlEncoder.writeObject(Main.listaBlanca);
+		xmlEncoder.close();
+
+	}
+	
+	public static void guardarListaNegra(LinkedList<ID> listaNegra) throws FileNotFoundException{
 		XMLEncoder xmlEncoder = new XMLEncoder(new FileOutputStream("/Users/chrisarrefall/Documents/listaNegra.xml"));
-		xmlEncoder.writeObject(listaBlanca);
+		xmlEncoder.writeObject(Main.listaNegra);
 		xmlEncoder.close();
 
 	}
